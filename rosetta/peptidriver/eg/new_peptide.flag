@@ -1,0 +1,9 @@
+-in:file:s input.pdb
+-out:file:silent peptide_deriver.out
+-peptide_deriver:pep_lengths num
+-peptide_deriver:restrict_receptors_to_chains A
+-peptide_deriver:restrict_partners_to_chains B
+-peptide_deriver:do_minimize true
+-peptide_deriver:dump_peptide_pose true 
+-peptide_deriver:dump_cyclic_poses true
+-overwrite
