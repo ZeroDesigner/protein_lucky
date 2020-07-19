@@ -1,0 +1,9 @@
+-s model_1_miss_0001.pdb 
+-loops:loop_file miss_loop.file 
+-loops:remodel perturb_kic 
+-loops:refine refine_kic 
+-ex1 
+-ex2 
+-nstruct 1 
+-loops:max_kic_build_attempts 100 
+-in:file:fullatom
