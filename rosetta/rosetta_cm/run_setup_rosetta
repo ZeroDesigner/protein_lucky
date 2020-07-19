@@ -1,0 +1,2 @@
+#run setuprosettacm.py
+python setup_RosettaCM.py --fasta RBD.fasta --alignment align_rbd.align --alignment_format fasta --templates 1.pdb 2.pdb  --rosetta_bin rosetta//bin --build mpi
