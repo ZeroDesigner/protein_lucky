@@ -1,0 +1,17 @@
+###Compile with MPI support
+cd rosetta/source
+./scons.py mode=release extras=mpi bin -j core_num
+
+
+errors:
+	/usr/bin/ld: libsdk.a(Imagexxx.cpp.o): unrecognized relocation (0x2a) in section .text
+	/usr/bin/ld: final link failed: Bad value
+	collect2: error: ld returned 1 exit status
+solvtion:
+	download package from https://ftp.gnu.org/gnu/binutils/?C=M;O=D
+	tar -zxvf binutils-2.26.tar.gz
+	cd binutils-2.26
+	./configure --prefix=/home/xxx/binutils
+	make
+	make install
+	export PATH="/home/xxx/binutils/bin:$PATH"
