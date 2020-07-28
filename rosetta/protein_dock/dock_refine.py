@@ -26,7 +26,7 @@ shutil.copy(list(df['description'])[0]+'.pdb','../')
 
 #local dock refine
 import os,shutil
-direct='/home/pengqi/sujiaqi20190423/wll/dock_refine/local_dock_post'
+direct=''
 dir_new=[direct+'/'+i for i in os.listdir(direct)]
 for i in os.listdir(direct):
     os.chdir(direct)
