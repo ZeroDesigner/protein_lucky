@@ -6,6 +6,7 @@
 You can use the package as described below.
 
 Prepare three files:all.ctrl,todo.all,other.conf
+        one dir input-files
 
 Support:python2,python3
 
