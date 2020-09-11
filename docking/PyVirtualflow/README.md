@@ -2,7 +2,7 @@
 
 #You can use the package as below.#
 
-#####step:
+####step:
 
     1: cd pyvs
     2: python setup.py install
@@ -16,6 +16,6 @@
         a=pyvs_run.PyVS('path/to/VFVS_GK')
         a.run()
         '''
-#####Tips:
+####Tips:
     1:The package is now building.
     2:If you meet any problem when you use the package,please contact with me 'luskyqi@outlook.com'
