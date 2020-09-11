@@ -22,13 +22,12 @@ class PyVS():
             f_zip = zipfile.ZipFile(self.conf_folder+"/VFVS_Tools.zip",'r')
             for file in f_zip.namelist():
                 f_zip.extract(file)
-
-
-
+            
             shutil.copy(self.conf_folder+'/all.ctrl',self.conf_folder+'/VFVS_tools/templates')
             shutil.copy(self.conf_folder+'/todo.all',self.conf_folder+'/VFVS_tools/templates')
 
             os.chdir(self.conf_folder+'/VFVS_tools/')
+            os.system('rm ../VFVS_Tools.zip')
             os.system('chmod +x *')
             os.system('chmod +x */*')
             os.system('./vf_prepare_folders_new.sh')
