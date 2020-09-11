@@ -1,8 +1,11 @@
 #This is a Python-Package for VirtualFlow#
 
-#You can use the package as below.#
+
+*You can use the package as below.*
+
 
 ####step:
+
 
     1: cd pyvs
     2: python setup.py install
